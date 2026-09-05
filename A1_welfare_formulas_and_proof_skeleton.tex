@@ -1,0 +1,358 @@
+\appendix
+\section{Explicit Continuation-Welfare Formulas and Proof Skeleton}
+
+\subsection{Preliminaries}
+
+Throughout this appendix, $\mathcal P$ denotes the admissible parameter set
+defined in Section~3. On $\mathcal P$, all denominators in the
+continuation-welfare level formulas reported below are strictly positive.
+Appendix~B studies derivatives of welfare differences; those expressions
+contain an additional factor $(v-1)$ after simplification, so their
+denominators are strictly negative on $\mathcal P$. The two sign statements
+therefore refer to different objects.
+
+A useful implication of the exact stage-4 first-order conditions is that profits can be written in a compact form:
+\begin{align}
+\pi_A^{SW} &= (x^{SW})^2+(y^{SW})^2+(w^{SW})^2, &
+\pi_C^{SW} &= 2(z^{SW})^2+(t^{SW})^2, \label{eq:profit_id_sw}\\
+\pi_A^{SU} &= (1-v)\Big[(x^{SU})^2+(y^{SU})^2+(w^{SU})^2\Big], &
+\pi_C^{SU} &= 2(z^{SU})^2+(t^{SU})^2, \label{eq:profit_id_su}\\
+\pi_A^{IS} &= (1-v)\Big[(x^{IS})^2+(y^{IS})^2+(w^{IS})^2\Big], &
+\pi_C^{IS} &= (1-v)\Big[2(z^{IS})^2+(t^{IS})^2\Big]. \label{eq:profit_id_is}
+\end{align}
+Together with $CS_k^r=(Q_k^r)^2/2$, these identities yield compact continuation-welfare formulas.
+
+\subsection{Continuation welfare under \texorpdfstring{$SW$}{SW}}
+
+Under $SW$,
+\begin{align}
+x^{SW} &= \frac{1+2c+\tau+\tau_C}{4}, &
+y^{SW} &= \frac{1-2c-3\tau+\tau_C}{4}, \notag\\
+z^{SW} &= \frac{1-2c+\tau-3\tau_C}{4}, &
+w^{SW} &= \frac{1-2c-2\tau}{4}, \notag\\
+t^{SW} &= \frac{1+2c+2\tau}{4}, \label{eq:sw_outputs_appendix}
+\end{align}
+and aggregate quantities are
+\begin{align}
+Q_A^{SW} &= x^{SW}+y^{SW}+z^{SW}
+= \frac{3-2c-\tau-\tau_C}{4}, \label{eq:QA_sw_appendix}\\
+Q_C^{SW} &= 2w^{SW}+t^{SW}
+= \frac{3-2c-2\tau}{4}. \label{eq:QC_sw_appendix}
+\end{align}
+
+Hence
+\begin{align}
+\widehat W_A^{SW}
+&= \frac{(Q_A^{SW})^2}{2} + (x^{SW})^2+(y^{SW})^2+(w^{SW})^2 \notag\\
+&= \frac{1}{32}\Big(
+28c^2+52c\tau+4c\tau_C-20c
++29\tau^2-6\tau\tau_C-22\tau
++5\tau_C^2+2\tau_C+15
+\Big), \label{eq:WA_sw_appendix}
+\\
+\widehat W_C^{SW}
+&= \frac{(Q_C^{SW})^2}{2} + 2(z^{SW})^2+(t^{SW})^2 \notag\\
+&= \frac{1}{32}\Big(
+28c^2+8c\tau+48c\tau_C-20c
++16\tau^2-24\tau\tau_C+4\tau
++36\tau_C^2-24\tau_C+15
+\Big). \label{eq:WC_sw_appendix}
+\end{align}
+
+\subsection{Continuation welfare under \texorpdfstring{$SU$}{SU}}
+
+Define
+\[
+d_{SU}\equiv (2-v)(2-7v).
+\]
+Using the exact FOCs, the symmetric equilibrium outputs under $SU$ are
+\begin{align}
+x^{SU} &= \frac{\Xi_x^{SU}}{2(1-v)d_{SU}}, &
+y^{SU} &= \frac{\Xi_y^{SU}}{2(1-v)d_{SU}}, \label{eq:su_outputs1_appendix}\\
+z^{SU} &= \frac{\Xi_z^{SU}}{2d_{SU}}, &
+w^{SU} &= \frac{\Xi_w^{SU}}{2d_{SU}}, &
+t^{SU} &= \frac{\Xi_t^{SU}}{2d_{SU}}, \label{eq:su_outputs2_appendix}
+\end{align}
+where
+\begin{align}
+\Xi_x^{SU}
+&= 7cv^2-9cv+2c
++8\tau v^2-15\tau v+2\tau
++3\tau_C v^2-5\tau_C v+2\tau_C
++v^2-3v+2, \label{eq:Xix_su}\\
+\Xi_y^{SU}
+&= 7cv^2-9cv+2c
+-6\tau v^2+17\tau v-6\tau
++3\tau_C v^2-5\tau_C v+2\tau_C
++v^2-3v+2, \label{eq:Xiy_su}\\
+\Xi_z^{SU}
+&= -7cv^2+23cv-6c
++\tau v+2\tau
+-7\tau_C v^2+19\tau_C v-6\tau_C
++7v^2-15v+2, \label{eq:Xiz_su}\\
+\Xi_w^{SU}
+&= 14cv-4c+6\tau v-4\tau+4\tau_C v-v+2, \label{eq:Xiw_su}\\
+\Xi_t^{SU}
+&= -14cv+4c-6\tau v+4\tau-4\tau_C v+7v^2-15v+2. \label{eq:Xit_su}
+\end{align}
+
+Aggregate quantities are
+\begin{align}
+Q_A^{SU}
+&= x^{SU}+y^{SU}+z^{SU}
+= \frac{\Xi_{Q_A}^{SU}}{2d_{SU}}, \label{eq:QA_su_appendix}\\
+Q_C^{SU}
+&= 2w^{SU}+t^{SU}
+= \frac{\Xi_{Q_C}^{SU}}{2d_{SU}}, \label{eq:QC_su_appendix}
+\end{align}
+with
+\begin{align}
+\Xi_{Q_A}^{SU}
+&= -7cv^2+9cv-2c
+-\tau v-2\tau
+-7\tau_C v^2+13\tau_C v-2\tau_C
++7v^2-17v+6, \label{eq:XiQA_su}\\
+\Xi_{Q_C}^{SU}
+&= 14cv-4c+6\tau v-4\tau+4\tau_C v+7v^2-17v+6. \label{eq:XiQC_su}
+\end{align}
+
+Now define
+\begin{align}
+M_A^{SU}
+&\equiv
+(1-v)\big(\Xi_{Q_A}^{SU}\big)^2
++2\big(\Xi_x^{SU}\big)^2
++2\big(\Xi_y^{SU}\big)^2
++2(1-v)^2\big(\Xi_w^{SU}\big)^2, \label{eq:MA_su}\\
+M_C^{SU}
+&\equiv
+\big(\Xi_{Q_C}^{SU}\big)^2
++4\big(\Xi_z^{SU}\big)^2
++2\big(\Xi_t^{SU}\big)^2. \label{eq:MC_su}
+\end{align}
+Then the continuation welfare under $SU$ is
+\begin{align}
+\widehat W_A^{SU}
+&=
+\frac{(Q_A^{SU})^2}{2}
++
+(1-v)\Big[(x^{SU})^2+(y^{SU})^2+(w^{SU})^2\Big]
+=
+\frac{M_A^{SU}}{8(1-v)d_{SU}^2}, \label{eq:WA_su_appendix}\\
+\widehat W_C^{SU}
+&=
+\frac{(Q_C^{SU})^2}{2}
++
+2(z^{SU})^2+(t^{SU})^2
+=
+\frac{M_C^{SU}}{8d_{SU}^2}. \label{eq:WC_su_appendix}
+\end{align}
+
+\subsection{Continuation welfare under \texorpdfstring{$IS$}{IS}}
+
+Define
+\[
+d_{IS}\equiv (4-v)(2-5v).
+\]
+Using the exact FOCs, the symmetric equilibrium outputs under $IS$ are
+\begin{align}
+x^{IS} &= \frac{\Xi_x^{IS}}{2(1-v)d_{IS}}, &
+y^{IS} &= \frac{\Xi_y^{IS}}{2(1-v)d_{IS}}, \label{eq:is_outputs1_appendix}\\
+z^{IS} &= \frac{\Xi_z^{IS}}{2(1-v)d_{IS}}, &
+w^{IS} &= \frac{\Xi_w^{IS}}{2(1-v)d_{IS}}, &
+t^{IS} &= \frac{\Xi_t^{IS}}{2(1-v)d_{IS}}, \label{eq:is_outputs2_appendix}
+\end{align}
+where
+\begin{align}
+\Xi_x^{IS}
+&= 4\tau v^2-14\tau v+4\tau
++2\tau_C v^2-12\tau_C v+4\tau_C
++v^2-5v+4, \label{eq:Xix_is}\\
+\Xi_y^{IS}
+&= -6\tau v^2+30\tau v-12\tau
++2\tau_C v^2-12\tau_C v+4\tau_C
++v^2-5v+4, \label{eq:Xiy_is}\\
+\Xi_z^{IS}
+&= 4\tau v^2-14\tau v+4\tau
+-8\tau_C v^2+32\tau_C v-12\tau_C
++v^2-5v+4, \label{eq:Xiz_is}\\
+\Xi_w^{IS}
+&= -6\tau v^2+20\tau v-8\tau
++2\tau_C v^2-2\tau_C v
++v^2-5v+4, \label{eq:Xiw_is}\\
+\Xi_t^{IS}
+&= 4\tau v^2-24\tau v+8\tau
++2\tau_C v^2-2\tau_C v
++v^2-5v+4. \label{eq:Xit_is}
+\end{align}
+
+Aggregate quantities are
+\begin{align}
+Q_A^{IS}
+&= x^{IS}+y^{IS}+z^{IS}
+= \frac{\Xi_{Q_A}^{IS}}{2d_{IS}}, \label{eq:QA_is_appendix}\\
+Q_C^{IS}
+&= 2w^{IS}+t^{IS}
+= \frac{\Xi_{Q_C}^{IS}}{2d_{IS}}, \label{eq:QC_is_appendix}
+\end{align}
+with
+\begin{align}
+\Xi_{Q_A}^{IS}
+&= 12-3v-4\tau-2\tau v-4\tau_C+4\tau_C v, \label{eq:XiQA_is}\\
+\Xi_{Q_C}^{IS}
+&= 12-3v-8\tau+8\tau v-6\tau_C v. \label{eq:XiQC_is}
+\end{align}
+
+Define
+\begin{align}
+M_A^{IS}
+&\equiv
+(1-v)\big(\Xi_{Q_A}^{IS}\big)^2
++2\big(\Xi_x^{IS}\big)^2
++2\big(\Xi_y^{IS}\big)^2
++2\big(\Xi_w^{IS}\big)^2, \label{eq:MA_is}\\
+M_C^{IS}
+&\equiv
+(1-v)\big(\Xi_{Q_C}^{IS}\big)^2
++4\big(\Xi_z^{IS}\big)^2
++2\big(\Xi_t^{IS}\big)^2. \label{eq:MC_is}
+\end{align}
+Then the continuation welfare under $IS$ is
+\begin{align}
+\widehat W_A^{IS}
+&=
+\frac{(Q_A^{IS})^2}{2}
++
+(1-v)\Big[(x^{IS})^2+(y^{IS})^2+(w^{IS})^2\Big]
+=
+\frac{M_A^{IS}}{8(1-v)d_{IS}^2}, \label{eq:WA_is_appendix}\\
+\widehat W_C^{IS}
+&=
+\frac{(Q_C^{IS})^2}{2}
++
+(1-v)\Big[2(z^{IS})^2+(t^{IS})^2\Big]
+=
+\frac{M_C^{IS}}{8(1-v)d_{IS}^2}. \label{eq:WC_is_appendix}
+\end{align}
+
+\subsection{Sign-equivalent numerator polynomials}
+
+Define the welfare differences
+\begin{align}
+\Delta_A^I &\equiv \widehat W_A^{IS}-\widehat W_A^{SU}, &
+\Delta_C^I &\equiv \widehat W_C^{IS}-\widehat W_C^{SU}, \label{eq:deltas_appendix1}\\
+\Delta_A^{SU} &\equiv \widehat W_A^{SU}-\widehat W_A^{SW}, &
+\Delta_A^{IS} &\equiv \widehat W_A^{IS}-\widehat W_A^{SW}. \label{eq:deltas_appendix2}
+\end{align}
+
+On $\mathcal P$, the denominators of these differences are strictly positive. Hence their signs are determined by the following numerator polynomials:
+\begin{align}
+\Psi_A^I
+&\equiv
+d_{SU}^2 M_A^{IS}
+-
+d_{IS}^2 M_A^{SU}, \label{eq:Psi_AI}\\
+\Psi_C^I
+&\equiv
+d_{SU}^2 M_C^{IS}
+-
+(1-v)d_{IS}^2 M_C^{SU}, \label{eq:Psi_CI}\\
+\Psi_A^{SU}
+&\equiv
+4M_A^{SU}
+-
+(1-v)d_{SU}^2 \cdot 32\widehat W_A^{SW}, \label{eq:Psi_ASU}\\
+\Psi_A^{IS}
+&\equiv
+4M_A^{IS}
+-
+(1-v)d_{IS}^2 \cdot 32\widehat W_A^{SW}. \label{eq:Psi_AIS}
+\end{align}
+Equivalently,
+\begin{align}
+\Delta_A^I
+&=
+\frac{\Psi_A^I}{8(1-v)d_{SU}^2 d_{IS}^2}, \label{eq:DeltaAI_num}\\
+\Delta_C^I
+&=
+\frac{\Psi_C^I}{8(1-v)d_{SU}^2 d_{IS}^2}, \label{eq:DeltaCI_num}\\
+\Delta_A^{SU}
+&=
+\frac{\Psi_A^{SU}}{32(1-v)d_{SU}^2}, \label{eq:DeltaASU_num}\\
+\Delta_A^{IS}
+&=
+\frac{\Psi_A^{IS}}{32(1-v)d_{IS}^2}. \label{eq:DeltaAIS_num}
+\end{align}
+
+\subsection{One-dimensional numerical characterizations for Section~4}
+
+The benchmark numerical examples in Section~4 can be sharpened by tracing the
+regime-comparison objects along one-dimensional parameter lines.
+
+\begin{lemma}[One-dimensional regional characterization for Proposition~2]
+\label{lem:prop2_interval}
+Fix $(v,c,\tau)=(0.05,0.05,0.02)$ and let $\tau_C$ vary. Then there exists a
+unique threshold
+\[
+\tau_C^\dagger \approx 0.1750504
+\]
+such that $\Delta_A^I(\tau_C)>0$ for $\tau_C<\tau_C^\dagger$ and
+$\Delta_A^I(\tau_C)<0$ for $\tau_C>\tau_C^\dagger$. On the admissible interval
+\[
+0\le \tau_C<\bar\tau_C^{\,adm}=\frac{1-2c+\tau}{3}=0.306\overline{6},
+\]
+we additionally have $\Delta_C^I(\tau_C)>0$,
+$\Delta_A^{SU}(\tau_C)>0$, and
+$\widehat W^{IS}(\tau_C)-\widehat W^{SU}(\tau_C)>0$. Therefore, for every
+\[
+\tau_C\in(\tau_C^\dagger,\bar\tau_C^{\,adm}),
+\]
+the equilibrium regime is $SU$ while continuation world welfare is maximized by
+$IS$.
+\end{lemma}
+
+\begin{proof}
+This follows from direct numerical evaluation of the closed-form continuation
+payoffs along the line $(v,c,\tau)=(0.05,0.05,0.02)$. Along this line,
+$\Delta_A^I(\tau_C)$ changes sign once at the admissible root
+$\tau_C^\dagger \approx 0.1750504$, while $\Delta_C^I(\tau_C)$,
+$\Delta_A^{SU}(\tau_C)$, and
+$\widehat W^{IS}(\tau_C)-\widehat W^{SU}(\tau_C)$ remain strictly positive on
+the full admissible interval. The stated sign pattern then implies the claim by
+Proposition~\ref{prop:regime_choice_main}.
+\end{proof}
+
+\begin{lemma}[One-dimensional threshold characterization for Proposition~3]
+\label{lem:prop3_threshold}
+Fix $(c,\tau,\tau_C)=(0.05,0,0.15)$ and let $v$ vary. Then there exists a
+unique threshold
+\[
+v^\dagger \approx 0.0543568
+\]
+such that $\Delta_A^I(v)>0$ for $v<v^\dagger$ and $\Delta_A^I(v)<0$ for
+$v>v^\dagger$. Along the same line, the admissibility conditions for the $SU$
+regime remain satisfied up to
+\[
+\bar v^{\,adm}\approx 0.0756400,
+\]
+and on the interval $v\in(v^\dagger,\bar v^{\,adm})$ we have
+\[
+\Delta_C^I(v)>0,\qquad \Delta_A^{SU}(v)>0,\qquad
+\widehat W^{IS}(v)-\widehat W^{SU}(v)>0.
+\]
+Therefore, stronger network effects shift the equilibrium regime from $IS$ to
+$SU$ while continuation world welfare still favors $IS$.
+\end{lemma}
+
+\begin{proof}
+Direct substitution of $(c,\tau,\tau_C)=(0.05,0,0.15)$ into the closed-form
+continuation payoffs yields a smooth one-dimensional family of
+regime-comparison functions. The function $\Delta_A^I(v)$ changes sign once at
+the admissible root $v^\dagger \approx 0.0543568$. Along the same line, the
+interiority conditions for the $SU$ regime remain satisfied up to
+$\bar v^{\,adm}\approx 0.0756400$, and the inequalities for
+$\Delta_C^I(v)$, $\Delta_A^{SU}(v)$, and
+$\widehat W^{IS}(v)-\widehat W^{SU}(v)$ remain strict on the interval
+$v\in(v^\dagger,\bar v^{\,adm})$. The conclusion then follows from
+Proposition~\ref{prop:regime_choice_main}.
+\end{proof}

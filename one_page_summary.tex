@@ -1,0 +1,80 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[top=18mm,bottom=18mm,left=20mm,right=20mm]{geometry}
+\usepackage{luatexja}
+\usepackage{luatexja-fontspec}
+\setmainjfont{Yu Mincho}
+\setsansjfont{Yu Gothic}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Segoe UI}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{amssymb,amsmath}
+\usepackage{booktabs}
+\usepackage{multicol}
+
+% Colours
+\definecolor{navy}{HTML}{1B2A4A}
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{darkgray}{HTML}{374151}
+
+% Compact spacing
+\setlength{\parskip}{2pt plus 1pt}
+\setlength{\parindent}{0pt}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\titlespacing*{\subsection}{0pt}{5pt}{2pt}
+\titleformat{\section}{\sffamily\bfseries\color{navy}\normalsize}{\thesection.}{0.4em}{}[\vspace{-2pt}\textcolor{accent}{\rule{\linewidth}{0.4pt}}]
+\titleformat{\subsection}{\sffamily\bfseries\color{darkgray}\small}{}{0em}{}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+{\sffamily\bfseries\large\color{navy} 参加能力の非対称性を伴う国際標準化}\\[2pt]
+{\small International Standardization with Participation-Capacity Asymmetry}\\[2pt]
+{\small 松木 亮太\quad |\quad 概要（A4 1枚）}
+\end{center}
+
+\vspace{-2pt}
+
+\section*{1.\;問題意識}
+既存の国際標準化モデルでは、共通標準への\textbf{加盟}（accession）が関連する越境摩擦を完全に除去すると暗黙に仮定される。
+しかし現実には、\textbf{形式的加盟と実効的参加は一致しない}。
+検査・認証・適合性評価の能力が弱い国は、相互承認を受けた後も残留コンプライアンス費用を負い続ける。
+本論文は、この\textbf{参加能力の非対称性}（participation-capacity asymmetry）がネットワーク外部性および連合形成とどう相互作用するかを分析する。
+
+\section*{2.\;モデル}
+\begin{itemize}[leftmargin=1.2em, itemsep=1pt, topsep=0pt]
+  \item \textbf{主体}：3カ国 $A,B,C$（各国に1企業）、市場分割型クールノー競争。
+  \item \textbf{レジーム}：標準化戦争 (SW)、2カ国連合 (SU: $A$--$B$ ブロック)、完全国際標準化 (IS)。
+  \item \textbf{鍵となる摩擦}：(i) 技術ギャップ費用 $c$（承認域外で発生）、(ii) 残留コンプライアンス費用 $\tau_k=\mu(1-\theta_k)$。\\
+    相互承認は $c$ を除去するが、参加能力 $\theta_k$ が低いと $\tau_k$ が残存。\;$\theta_A = \theta_B > \theta_C$ と仮定。
+  \item \textbf{タイミング}：Stage\,0（能力投資） → Stage\,1--3（レジーム形成：後方帰納法） → Stage\,4（数量競争）。
+\end{itemize}
+
+\section*{3.\;主要結果}
+
+\subsection*{命題\,1：均衡レジームの特徴付け}
+ISが均衡となるには、(a)\,C自身が加盟を望み ($\Delta_C^I \ge 0$)、(b)\,メンバー国が受け入れ ($\Delta_A^I \ge 0$)、(c)\,A・BがIS形成を望む ($\Delta_A^{IS}\ge 0$) の三条件が同時に必要。
+
+\subsection*{命題\,2：世界厚生と均衡レジームの乖離}
+ISが世界厚生を最大化するにもかかわらず、均衡がSU（排他的ブロック）に留まるパラメータ領域 $\Omega \subset \mathcal{P}$ が存在する。\\
+\textbf{メカニズム}：低参加能力の$C$が加盟しても共通インストールドベースへの貢献が小さく、メンバー国市場の競争圧力増大の方が支配的 → メンバー国が拒否。
+
+\subsection*{命題\,3：ネットワーク効果の非単調性}
+ネットワーク外部性パラメータ $v$を強めることが、参加能力非対称が大きい場合には、ISではなく\textbf{排他的SUを安定化}させうる。直感的には、$v$の増大は既存ブロックの戦略的価値も高めるため。
+
+\subsection*{命題\,4：能力投資と条件付き移転}
+参加能力を内生化（$\theta_k = \bar\theta_k + I_k$, 費用 $\eta I_k^2/2$）。
+条件付き移転 $s$（IS実現時のみ有効）により C の実効費用を$\tau_C - s$に削減すると、最小アクセッション移転 $s^{\mathrm{acc}}$ を超える移転でISを誘導でき、世界厚生を改善しうる。\textbf{能力構築型政策}（検査・認証支援等）は、標準フラグメンテーション維持より効果的。
+
+\section*{4.\;貢献と政策含意}
+\begin{itemize}[leftmargin=1.2em, itemsep=1pt, topsep=0pt]
+  \item 互換性文献に対し：\textbf{形式的互換性と実効的参加の区別}を初めてモデル化。
+  \item 国際標準化文献に対し：相互承認が技術的に可能でも\textbf{残留する参加能力格差が非効率な排除を維持}しうることを示す。
+  \item 政策面：断片化の原因が参加能力の弱さならば、承認の法的付与だけでなく、\textbf{能力構築}（testing, certification, conformity assessment）が真のボトルネック解消に必須。
+\end{itemize}
+
+\end{document}

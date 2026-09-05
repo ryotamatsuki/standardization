@@ -1,0 +1,283 @@
+\section{Appendix to Section 5: Monotonicity and Threshold Existence}
+
+This appendix provides the technical details behind the sign conditions and
+threshold objects used in Section~5. Throughout, all expressions are based on
+the exact stage-4 first-order conditions reported in Section~3 and on the
+continuation-welfare formulas collected in Appendix~A.
+
+\subsection{Derivative objects and benchmark signs}
+
+Recall the continuation-welfare differences
+\begin{align}
+\Delta_A^I &= \widehat W_A^{IS}-\widehat W_A^{SU}, &
+\Delta_C^I &= \widehat W_C^{IS}-\widehat W_C^{SU}, \label{eq:appendix_deltas_1}\\
+\Delta_A^{SU} &= \widehat W_A^{SU}-\widehat W_A^{SW}, &
+\Delta_A^{IS} &= \widehat W_A^{IS}-\widehat W_A^{SW}. \label{eq:appendix_deltas_2}
+\end{align}
+
+The derivatives used in Section~5 are obtained by differentiating the exact
+continuation-welfare formulas in Appendix~A. The resulting rational functions
+are lengthy, so the fully expanded numerators are omitted here. What matters
+for Section~5 is the sign of those derivatives on the compact parameter domain
+used for the policy discussion.
+
+A useful benchmark check is the case without network effects. Evaluating the
+derivatives at $v=0$ gives
+\begin{align}
+\left.\frac{\partial \Delta_A^I}{\partial \tau_C}\right|_{v=0}
+&= -\frac{5c}{16}, \label{eq:dAI_tauC_v0_final}\\
+\left.\frac{\partial \Delta_C^I}{\partial \tau_C}\right|_{v=0}
+&= -\frac{9c}{4}, \label{eq:dCI_tauC_v0_final}\\
+\left.\frac{\partial \Delta_A^{SU}}{\partial \tau}\right|_{v=0}
+&= -\frac{21c}{16}, \label{eq:dASU_tau_v0_final}\\
+\left.\frac{\partial \Delta_A^{IS}}{\partial \tau}\right|_{v=0}
+&= -\frac{13c}{8}. \label{eq:dAIS_tau_v0_final}
+\end{align}
+These expressions are strictly negative whenever $c>0$.
+
+For later comparative statics, it is also useful to note that
+\begin{equation}
+\left.\frac{\partial \Delta_A^I}{\partial \tau}\right|_{v=0}
+= -\frac{5c}{16}<0.
+\label{eq:dAI_tau_v0_final}
+\end{equation}
+
+\subsection{A broader numerically verified monotonicity domain}
+
+Because the exact derivative formulas are high-order rational functions, the
+most transparent way to support the policy analysis in Section~5 is to verify
+their signs numerically on an explicit compact parameter domain.
+
+We use the broader compact domain
+\begin{equation}
+\mathcal D'
+=
+\left\{
+\begin{aligned}
+(v,c,\tau,\tau_C):\quad &0 \le v \le 0.055,\\
+&0.03 \le c \le 0.06,\\
+&0 \le \tau \le 0.04,\\
+&0 \le \tau_C \le 0.18
+\end{aligned}
+\right\}
+\subset \mathcal P.
+\label{eq:domain_D}
+\end{equation}
+This domain contains the benchmark examples used in Section~4 and in the
+policy discussion of Section~5, while allowing a materially broader range of
+network-effect and baseline trade-cost values than the narrower benchmark box
+used to motivate the numerical exercises.
+
+On a $31\times 31\times 31\times 31$ uniform grid over $\mathcal D'$, all
+admissibility conditions defining $\mathcal P$ remain strictly satisfied. In
+particular,
+\begin{align}
+\min_{\mathcal D'}\left(\frac{2}{7}-v\right) &= 0.2307142857, \notag\\
+\min_{\mathcal D'}\left(1-2c-3\tau+\tau_C\right) &= 0.70, \notag\\
+\min_{\mathcal D'}\left(1-2c+\tau-3\tau_C\right) &= 0.34, \notag\\
+\min_{\mathcal D'}\left(1-2c-2\tau\right) &= 0.80, \label{eq:D_admissibility_margins}
+\end{align}
+and the smallest regime-specific positivity margin on the grid is
+\begin{equation}
+\min_{\mathcal D'}\Xi_z^{SU}=0.015093>0.
+\label{eq:D_smallest_margin}
+\end{equation}
+Hence the entire verified domain lies strictly inside the admissible set.
+
+The same grid check yields
+\begin{align}
+\max_{\mathcal D'}\frac{\partial \Delta_A^I}{\partial \tau_C}
+&= -0.009375, \label{eq:D_dAI_max}\\
+\max_{\mathcal D'}\frac{\partial \Delta_C^I}{\partial \tau_C}
+&= -0.0675, \label{eq:D_dCI_max}\\
+\max_{\mathcal D'}\frac{\partial \Delta_A^{SU}}{\partial \tau}
+&= -0.039375, \label{eq:D_dASU_max}\\
+\max_{\mathcal D'}\frac{\partial \Delta_A^{IS}}{\partial \tau}
+&= -0.04875. \label{eq:D_dAIS_max}
+\end{align}
+Since even the maxima are strictly negative, the monotonicity conditions used
+in Section~5 hold throughout the grid. The same sign pattern was also
+confirmed by an additional random check with 300{,}000 draws from
+$\mathcal D'$.
+
+Accordingly, for the parameter region used in the paper's numerical policy
+discussion, the threshold analysis in Section~5 is conducted on a compact
+domain on which the required monotonicity is numerically verified rather than
+assumed globally over all of $\mathcal P$. The policy results should still be
+read as local-to-domain comparative statics rather than as unrestricted global
+theorems, but the verified region is not confined to an arbitrarily thin
+neighborhood of the benchmark point.
+
+\subsection{Threshold existence: generic lemma}
+
+The threshold objects in Section~5 are applications of the following
+elementary result.
+
+\begin{lemma}[Existence, uniqueness, and differentiability of thresholds]
+\label{lem:generic_threshold_final}
+Let $I\subset \mathbb R$ and $J=[\underline z,\bar z]\subset \mathbb R$ be
+nonempty intervals, and let
+\[
+F:I\times J\to \mathbb R
+\]
+be continuous on $I\times J$ and continuously differentiable on its interior.
+Suppose that
+\begin{equation}
+\frac{\partial F(u,z)}{\partial z}<0
+\qquad
+\text{for all }(u,z)\in I\times J.
+\label{eq:Fz_negative_final}
+\end{equation}
+Then:
+
+\begin{enumerate}
+    \item For each fixed $u\in I$, the equation $F(u,z)=0$ has at most one
+    solution in $J$.
+
+    \item If, in addition,
+    \begin{equation}
+    F(u,\underline z)\ge 0
+    \qquad\text{and}\qquad
+    F(u,\bar z)\le 0,
+    \label{eq:crossing_condition_final}
+    \end{equation}
+    then there exists a unique threshold $z^*(u)\in J$ such that
+    \[
+    F(u,z^*(u))=0.
+    \]
+
+    \item If the inequalities in \eqref{eq:crossing_condition_final} are
+    strict, then $z^*(u)$ is continuously differentiable and
+    \begin{equation}
+    \frac{dz^*(u)}{du}
+    =
+    -\frac{\partial F(u,z^*(u))/\partial u}
+    {\partial F(u,z^*(u))/\partial z}.
+    \label{eq:implicit_formula_final}
+    \end{equation}
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+Condition \eqref{eq:Fz_negative_final} implies that, for each fixed $u$, the
+map $z\mapsto F(u,z)$ is strictly decreasing, which gives uniqueness. If
+\eqref{eq:crossing_condition_final} holds, continuity yields existence by the
+intermediate value theorem. The differentiability statement follows from the
+implicit function theorem because $\partial F/\partial z\neq 0$ at the
+threshold.
+\end{proof}
+
+\subsection{Application to the threshold functions in Section~5}
+
+We now apply Lemma~\ref{lem:generic_threshold_final} on the domain
+$\mathcal D'$, where the monotonicity inequalities used in Section~5 are
+numerically verified.
+
+\noindent\textbf{Accession thresholds.}
+Fix $\tau\in[0,\bar\tau]$. If
+\begin{align}
+\Delta_A^I(\tau,0) &\ge 0, &
+\Delta_A^I(\tau,\bar\tau_C) &\le 0, \label{eq:AI_crossing_final}\\
+\Delta_C^I(\tau,0) &\ge 0, &
+\Delta_C^I(\tau,\bar\tau_C) &\le 0, \label{eq:CI_crossing_final}
+\end{align}
+then there exist unique thresholds $\tau_C^A(\tau),\tau_C^C(\tau)\in[0,\bar\tau_C]$
+such that
+\begin{align}
+\Delta_A^I(\tau,\tau_C^A(\tau)) &= 0, \label{eq:tauCA_final}\\
+\Delta_C^I(\tau,\tau_C^C(\tau)) &= 0. \label{eq:tauCC_final}
+\end{align}
+Moreover, if the endpoint inequalities in
+\eqref{eq:AI_crossing_final}--\eqref{eq:CI_crossing_final} are strict, then
+\begin{align}
+\frac{d\tau_C^A(\tau)}{d\tau}
+&=
+-\frac{\partial \Delta_A^I(\tau,\tau_C^A(\tau))/\partial \tau}
+{\partial \Delta_A^I(\tau,\tau_C^A(\tau))/\partial \tau_C},
+\label{eq:d_tauCA_final}
+\\
+\frac{d\tau_C^C(\tau)}{d\tau}
+&=
+-\frac{\partial \Delta_C^I(\tau,\tau_C^C(\tau))/\partial \tau}
+{\partial \Delta_C^I(\tau,\tau_C^C(\tau))/\partial \tau_C}.
+\label{eq:d_tauCC_final}
+\end{align}
+
+\medskip
+\noindent\textbf{Formation thresholds.}
+Fix $\tau_C\in[0,\bar\tau_C]$. If
+\begin{align}
+\Delta_A^{SU}(0,\tau_C) &\ge 0, &
+\Delta_A^{SU}(\bar\tau,\tau_C) &\le 0, \label{eq:ASU_crossing_final}\\
+\Delta_A^{IS}(0,\tau_C) &\ge 0, &
+\Delta_A^{IS}(\bar\tau,\tau_C) &\le 0, \label{eq:AIS_crossing_final}
+\end{align}
+then there exist unique thresholds $\tau^{SU}(\tau_C),\tau^{IS}(\tau_C)\in[0,\bar\tau]$
+such that
+\begin{align}
+\Delta_A^{SU}(\tau^{SU}(\tau_C),\tau_C) &= 0, \label{eq:tauSU_final}\\
+\Delta_A^{IS}(\tau^{IS}(\tau_C),\tau_C) &= 0. \label{eq:tauIS_final}
+\end{align}
+Moreover, if the endpoint inequalities in
+\eqref{eq:ASU_crossing_final}--\eqref{eq:AIS_crossing_final} are strict, then
+\begin{align}
+\frac{d\tau^{SU}(\tau_C)}{d\tau_C}
+&=
+-\frac{\partial \Delta_A^{SU}(\tau^{SU}(\tau_C),\tau_C)/\partial \tau_C}
+{\partial \Delta_A^{SU}(\tau^{SU}(\tau_C),\tau_C)/\partial \tau},
+\label{eq:d_tauSU_final}
+\\
+\frac{d\tau^{IS}(\tau_C)}{d\tau_C}
+&=
+-\frac{\partial \Delta_A^{IS}(\tau^{IS}(\tau_C),\tau_C)/\partial \tau_C}
+{\partial \Delta_A^{IS}(\tau^{IS}(\tau_C),\tau_C)/\partial \tau}.
+\label{eq:d_tauIS_final}
+\end{align}
+
+\begin{corollary}[Threshold representation used in Section~5]
+\label{cor:threshold_representation_final}
+Under the monotonicity inequalities verified on $\mathcal D'$ and the crossing
+conditions above, the primitive threshold functions
+\[
+\tau_C^A(\tau),\quad \tau_C^C(\tau),\quad \tau^{SU}(\tau_C),\quad \tau^{IS}(\tau_C)
+\]
+are well defined, unique, and continuously differentiable. Moreover,
+\[
+\tau_C^{I}(\tau)=\min\{\tau_C^A(\tau),\tau_C^C(\tau)\}
+\]
+and
+\[
+I_C^{I}(I_H)
+=
+\max\left\{
+0,\,
+\frac{\bar\tau_C-\tau_C^{I}(\bar\tau-\mu I_H)}{\mu}
+\right\}
+\]
+are well defined and continuous, and piecewise continuously differentiable.
+\end{corollary}
+
+\medskip
+\noindent\textbf{Scope of the threshold representation.}
+Corollary~\ref{cor:threshold_representation_final} is the exact sense in which
+threshold objects are used in Section~5. The paper does not claim that these
+thresholds exist globally for all parameter values in $\mathcal P$. Rather,
+the claim is that, on the verified compact domain $\mathcal D'$ and under the
+endpoint crossing conditions stated above, the relevant regime-comparison
+functions cross zero in a well-behaved way and therefore admit unique
+differentiable threshold representations.
+
+\subsection{Optional comparative-static refinement}
+
+Using \eqref{eq:dAI_tau_v0_final}, if the domain $\mathcal D'$ is further
+restricted so that
+\[
+\frac{\partial \Delta_A^I}{\partial \tau}<0
+\qquad\text{on }\mathcal D',
+\]
+then \eqref{eq:d_tauCA_final} implies
+\[
+\frac{d\tau_C^A(\tau)}{d\tau}<0.
+\]
+Thus, a higher residual compliance cost for incumbent members lowers the
+maximum outsider residual cost consistent with accession.

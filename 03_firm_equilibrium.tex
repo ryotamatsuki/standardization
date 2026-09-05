@@ -1,0 +1,310 @@
+\section{Firm Equilibrium under \texorpdfstring{$SW$}{SW}, \texorpdfstring{$SU$}{SU}, and \texorpdfstring{$IS$}{IS}}
+
+At stage 4, firms take the standardization regime and post-investment participation capacities as given and compete \`a la Cournot in each segmented market. Throughout, countries $A$ and $B$ are ex ante symmetric, so that
+\[
+\tau_A=\tau_B\equiv \tau,
+\]
+whereas country $C$ may have lower participation capacity and is characterized by $\tau_C$.
+
+We restrict attention to an admissible parameter region
+\[
+\mathcal P
+\equiv
+\left\{
+\begin{aligned}
+(v,c,\tau,\tau_C):\quad &0\le v<\frac{2}{7},\\
+&\text{all equilibrium quantities under } SW,SU,IS\\
+&\text{are strictly positive}
+\end{aligned}
+\right\},
+\]
+under which the equilibrium in each regime is unique and interior. This
+definition is used throughout the main text and appendices.
+
+By symmetry, in every regime $r\in\{SW,SU,IS\}$, equilibrium quantities can be written as
+\[
+q_{AA}^r=q_{BB}^r\equiv x^r,\qquad
+q_{BA}^r=q_{AB}^r\equiv y^r,
+\]
+\[
+q_{CA}^r=q_{CB}^r\equiv z^r,\qquad
+q_{AC}^r=q_{BC}^r\equiv w^r,\qquad
+q_{CC}^r\equiv t^r.
+\]
+Hence $x^r$ denotes the output of a member-country firm in its own market, $y^r$ its sales in the other member-country market, $z^r$ country $C$'s exports to $A$ and $B$, $w^r$ the exports of $A$ and $B$ to country $C$, and $t^r$ country $C$'s domestic output.
+
+\noindent\textbf{Equilibrium concept in the quantity stage.}
+Because the installed-base term enters demand through $B_g^r$, which is itself
+induced by the equilibrium quantity profile, stage 4 is solved as a
+Nash-in-quantities equilibrium with rational expectations. Firms take the
+standardization regime and the compatible-installed-base logic as given, and
+the closed-form equilibrium quantities reported below solve the resulting
+fixed-point system directly. In particular, own output contributes to the
+installed base because consumption of a compatible product enlarges the
+recognized network itself; this is an intended feature of the demand
+specification rather than a double-counting artifact.
+
+\subsection{Standards War}
+
+Under $SW$, no country recognizes any foreign standard. Hence no network benefit arises, and each market is a standard segmented Cournot triopoly with asymmetric marginal costs. In markets $A$ and $B$, the relevant marginal costs are
+\[
+(0,\; c+\tau,\; c+\tau_C),
+\]
+while in market $C$ they are
+\[
+(c+\tau,\; c+\tau,\; 0).
+\]
+
+The first-order conditions are
+\begin{align}
+1-2x^{SW}-y^{SW}-z^{SW} &=0, \label{eq:sw_foc_x_main}\\
+1-x^{SW}-2y^{SW}-z^{SW}-(c+\tau) &=0, \label{eq:sw_foc_y_main}\\
+1-x^{SW}-y^{SW}-2z^{SW}-(c+\tau_C) &=0, \label{eq:sw_foc_z_main}\\
+1-3w^{SW}-t^{SW}-(c+\tau) &=0, \label{eq:sw_foc_w_main}\\
+1-2w^{SW}-2t^{SW} &=0. \label{eq:sw_foc_t_main}
+\end{align}
+
+Solving \eqref{eq:sw_foc_x_main}--\eqref{eq:sw_foc_t_main} yields the next lemma.
+
+\begin{lemma}[Firm equilibrium under $SW$]
+The unique interior equilibrium under a standards war is
+\begin{align}
+x^{SW} &= \frac{1+2c+\tau+\tau_C}{4}, \label{eq:xsw_main}\\
+y^{SW} &= \frac{1-2c-3\tau+\tau_C}{4}, \label{eq:ysw_main}\\
+z^{SW} &= \frac{1-2c+\tau-3\tau_C}{4}, \label{eq:zsw_main}\\
+w^{SW} &= \frac{1-2c-2\tau}{4}, \label{eq:wsw_main}\\
+t^{SW} &= \frac{1+2c+2\tau}{4}. \label{eq:tsw_main}
+\end{align}
+\end{lemma}
+
+\noindent
+In particular, aggregate quantities in a representative member-country market and in country $C$ are
+\begin{align}
+Q_A^{SW} &= x^{SW}+y^{SW}+z^{SW}
+= \frac{3-2c-\tau-\tau_C}{4}, \label{eq:QAsw_main}\\
+Q_C^{SW} &= 2w^{SW}+t^{SW}
+= \frac{3-2c-2\tau}{4}. \label{eq:QCsw_main}
+\end{align}
+
+\subsection{Standardization Union}
+
+Under $SU$, countries $A$ and $B$ mutually recognize each other's standards, while country $C$ remains outside the union. Let
+\[
+X^{SU}\equiv x^{SU}+y^{SU}+w^{SU}
+\]
+denote the total output of a representative member-country firm. Since the two member firms are symmetric, the installed base of the union standard is
+\[
+S^{SU}=2X^{SU}.
+\]
+
+A member firm's output in any market contributes one-for-one to the installed base of the common standard. Accordingly, the first-order conditions for member firms contain the endogenous demand-shifting term $v(S^{SU}+q)$, where $q$ is the firm's own output in the corresponding market. Country $C$, being outside the union, obtains no network benefit.
+
+The first-order conditions are
+\begin{align}
+1-2x^{SU}-y^{SU}-z^{SU}+v(S^{SU}+x^{SU}) &=0, \label{eq:su_foc_x_main}\\
+1-x^{SU}-2y^{SU}-z^{SU}-\tau+v(S^{SU}+y^{SU}) &=0, \label{eq:su_foc_y_main}\\
+1-3w^{SU}-t^{SU}-(c+\tau)+v(S^{SU}+w^{SU}) &=0, \label{eq:su_foc_w_main}\\
+1-x^{SU}-y^{SU}-2z^{SU}-(c+\tau_C) &=0, \label{eq:su_foc_z_main}\\
+1-2w^{SU}-2t^{SU} &=0. \label{eq:su_foc_t_main}
+\end{align}
+
+The asymmetry between \eqref{eq:su_foc_w_main} and \eqref{eq:su_foc_t_main} is
+economically important. In market $C$, the products exported by firms $A$ and
+$B$ belong to the union standard and therefore benefit from the installed base
+$S^{SU}$ accumulated across the union. Firm $C$, by contrast, remains a
+singleton standard holder in its home market and thus receives no network term.
+The absence of $v$ in \eqref{eq:su_foc_t_main} therefore reflects exclusion
+from the recognized standard area rather than a different competitive
+structure in market $C$.
+
+Define
+\[
+d_{SU}\equiv (2-v)(2-7v).
+\]
+On $\mathcal P$, we have $d_{SU}>0$, and the system \eqref{eq:su_foc_x_main}--\eqref{eq:su_foc_t_main} has a unique interior solution.
+
+\begin{lemma}[Firm equilibrium under $SU$]
+The unique interior equilibrium under a two-country standardization union is
+\begin{align}
+x^{SU} &= \frac{\Xi_x^{SU}}{2(1-v)d_{SU}}, \label{eq:xsu_main}\\
+y^{SU} &= \frac{\Xi_y^{SU}}{2(1-v)d_{SU}}, \label{eq:ysu_main}\\
+z^{SU} &= \frac{\Xi_z^{SU}}{2d_{SU}}, \label{eq:zsu_main}\\
+w^{SU} &= \frac{\Xi_w^{SU}}{2d_{SU}}, \label{eq:wsu_main}\\
+t^{SU} &= \frac{\Xi_t^{SU}}{2d_{SU}}, \label{eq:tsu_main}
+\end{align}
+where
+\begin{align}
+\Xi_x^{SU}
+&= 7cv^2-9cv+2c
++8\tau v^2-15\tau v+2\tau
++3\tau_C v^2-5\tau_C v+2\tau_C
++v^2-3v+2, \label{eq:Xix_su_main}\\
+\Xi_y^{SU}
+&= 7cv^2-9cv+2c
+-6\tau v^2+17\tau v-6\tau
++3\tau_C v^2-5\tau_C v+2\tau_C
++v^2-3v+2, \label{eq:Xiy_su_main}\\
+\Xi_z^{SU}
+&= -7cv^2+23cv-6c
++\tau v+2\tau
+-7\tau_C v^2+19\tau_C v-6\tau_C
++7v^2-15v+2, \label{eq:Xiz_su_main}\\
+\Xi_w^{SU}
+&= 14cv-4c+6\tau v-4\tau+4\tau_C v-v+2, \label{eq:Xiw_su_main}\\
+\Xi_t^{SU}
+&= -14cv+4c-6\tau v+4\tau-4\tau_C v+7v^2-15v+2. \label{eq:Xit_su_main}
+\end{align}
+\end{lemma}
+
+\noindent
+Aggregate quantities are
+\begin{align}
+Q_A^{SU}
+&= x^{SU}+y^{SU}+z^{SU}
+= \frac{\Xi_{Q_A}^{SU}}{2d_{SU}}, \label{eq:QAsu_main}\\
+Q_C^{SU}
+&= 2w^{SU}+t^{SU}
+= \frac{\Xi_{Q_C}^{SU}}{2d_{SU}}, \label{eq:QCsu_main}
+\end{align}
+where
+\begin{align}
+\Xi_{Q_A}^{SU}
+&= -7cv^2+9cv-2c
+-\tau v-2\tau
+-7\tau_C v^2+13\tau_C v-2\tau_C
++7v^2-17v+6, \label{eq:XiQA_su_main}\\
+\Xi_{Q_C}^{SU}
+&= 14cv-4c+6\tau v-4\tau+4\tau_C v+7v^2-17v+6. \label{eq:XiQC_su_main}
+\end{align}
+
+\subsection{International Standardization}
+
+Under $IS$, all three countries recognize the common standard. Let
+\[
+N^{IS}\equiv 2x^{IS}+2y^{IS}+2w^{IS}+2z^{IS}+t^{IS}
+\]
+denote the common installed base.
+
+A useful feature of the $IS$ regime is that the baseline technology-gap cost
+$c$ disappears from all cross-border marginal costs. This is not an algebraic
+accident: under full international standardization, every export destination
+belongs to the same recognized standard area, so mutual recognition removes the
+technology-gap component by construction. What remains is only the
+exporter-specific residual compliance cost $\tau_i$.
+
+Because every firm's output contributes one-for-one to the common installed base, the first-order conditions contain the endogenous demand-shifting term $v(N^{IS}+q)$, where $q$ is the firm's own output in the relevant market.
+
+The first-order conditions are
+\begin{align}
+1-2x^{IS}-y^{IS}-z^{IS}+v(N^{IS}+x^{IS}) &=0, \label{eq:is_foc_x_main}\\
+1-x^{IS}-2y^{IS}-z^{IS}-\tau+v(N^{IS}+y^{IS}) &=0, \label{eq:is_foc_y_main}\\
+1-3w^{IS}-t^{IS}-\tau+v(N^{IS}+w^{IS}) &=0, \label{eq:is_foc_w_main}\\
+1-x^{IS}-y^{IS}-2z^{IS}-\tau_C+v(N^{IS}+z^{IS}) &=0, \label{eq:is_foc_z_main}\\
+1-2w^{IS}-2t^{IS}+v(N^{IS}+t^{IS}) &=0. \label{eq:is_foc_t_main}
+\end{align}
+
+Define
+\[
+d_{IS}\equiv (4-v)(2-5v).
+\]
+On $\mathcal P$, we have $d_{IS}>0$, and the system \eqref{eq:is_foc_x_main}--\eqref{eq:is_foc_t_main} has a unique interior solution.
+
+\begin{lemma}[Firm equilibrium under $IS$]
+The unique interior equilibrium under full international standardization is
+\begin{align}
+x^{IS} &= \frac{\Xi_x^{IS}}{2(1-v)d_{IS}}, \label{eq:xis_main}\\
+y^{IS} &= \frac{\Xi_y^{IS}}{2(1-v)d_{IS}}, \label{eq:yis_main}\\
+z^{IS} &= \frac{\Xi_z^{IS}}{2(1-v)d_{IS}}, \label{eq:zis_main}\\
+w^{IS} &= \frac{\Xi_w^{IS}}{2(1-v)d_{IS}}, \label{eq:wis_main}\\
+t^{IS} &= \frac{\Xi_t^{IS}}{2(1-v)d_{IS}}, \label{eq:tis_main}
+\end{align}
+where
+\begin{align}
+\Xi_x^{IS}
+&= 4\tau v^2-14\tau v+4\tau
++2\tau_C v^2-12\tau_C v+4\tau_C
++v^2-5v+4, \label{eq:Xix_is_main}\\
+\Xi_y^{IS}
+&= -6\tau v^2+30\tau v-12\tau
++2\tau_C v^2-12\tau_C v+4\tau_C
++v^2-5v+4, \label{eq:Xiy_is_main}\\
+\Xi_z^{IS}
+&= 4\tau v^2-14\tau v+4\tau
+-8\tau_C v^2+32\tau_C v-12\tau_C
++v^2-5v+4, \label{eq:Xiz_is_main}\\
+\Xi_w^{IS}
+&= -6\tau v^2+20\tau v-8\tau
++2\tau_C v^2-2\tau_C v
++v^2-5v+4, \label{eq:Xiw_is_main}\\
+\Xi_t^{IS}
+&= 4\tau v^2-24\tau v+8\tau
++2\tau_C v^2-2\tau_C v
++v^2-5v+4. \label{eq:Xit_is_main}
+\end{align}
+\end{lemma}
+
+\noindent
+Aggregate quantities are
+\begin{align}
+Q_A^{IS}
+&= x^{IS}+y^{IS}+z^{IS}
+= \frac{\Xi_{Q_A}^{IS}}{2d_{IS}}, \label{eq:QAis_main}\\
+Q_C^{IS}
+&= 2w^{IS}+t^{IS}
+= \frac{\Xi_{Q_C}^{IS}}{2d_{IS}}, \label{eq:QCis_main}
+\end{align}
+where
+\begin{align}
+\Xi_{Q_A}^{IS}
+&= 12-3v-4\tau-2\tau v-4\tau_C+4\tau_C v, \label{eq:XiQA_is_main}\\
+\Xi_{Q_C}^{IS}
+&= 12-3v-8\tau+8\tau v-6\tau_C v. \label{eq:XiQC_is_main}
+\end{align}
+
+The closed-form expressions above allow the admissible parameter region to be
+written more explicitly. A convenient sufficient description is
+\begin{align}
+0\le v &< \frac{2}{7}, \label{eq:P_v_main}\\
+1-2c-3\tau+\tau_C &> 0,\quad
+1-2c+\tau-3\tau_C > 0,\quad
+1-2c-2\tau > 0, \label{eq:P_sw_main}\\
+\Xi_x^{SU},\,\Xi_y^{SU},\,\Xi_z^{SU},\,\Xi_w^{SU},\,\Xi_t^{SU} &> 0,
+\label{eq:P_su_main}\\
+\Xi_x^{IS},\,\Xi_y^{IS},\,\Xi_z^{IS},\,\Xi_w^{IS},\,\Xi_t^{IS} &> 0.
+\label{eq:P_is_main}
+\end{align}
+Condition \eqref{eq:P_v_main} implies $d_{SU}>0$ and $d_{IS}>0$, so the linear
+FOC systems under $SU$ and $IS$ have unique solutions. Conditions
+\eqref{eq:P_sw_main}--\eqref{eq:P_is_main} ensure that every regime-specific
+equilibrium quantity is strictly positive. In the sequel, $\mathcal P$ denotes
+any compact subset of the parameter space satisfying
+\eqref{eq:P_v_main}--\eqref{eq:P_is_main}.
+
+These inequalities also have a natural economic interpretation. The
+$SW$-specific restrictions in \eqref{eq:P_sw_main} ensure that foreign firms
+remain active exporters despite the technology-gap cost and the residual
+compliance burden. The positivity requirements on
+\eqref{eq:P_su_main}--\eqref{eq:P_is_main} play the same role under $SU$ and
+$IS$: they guarantee that each firm supplies every market relevant to the
+regime under consideration, so the interior Cournot formulas are economically
+meaningful rather than merely algebraic.
+
+\subsection{A useful profit identity}
+
+For later welfare comparisons, it is convenient to note that the first-order conditions imply compact profit expressions. Under $SW$, no network feedback arises, so
+\begin{align}
+\pi_A^{SW} &= (x^{SW})^2+(y^{SW})^2+(w^{SW})^2, \label{eq:piA_sw_main}\\
+\pi_C^{SW} &= 2(z^{SW})^2+(t^{SW})^2. \label{eq:piC_sw_main}
+\end{align}
+Under $SU$, member firms face the effective slope term $-1+v$, whereas country $C$ does not. Hence
+\begin{align}
+\pi_A^{SU} &= (1-v)\Big[(x^{SU})^2+(y^{SU})^2+(w^{SU})^2\Big], \label{eq:piA_su_main}\\
+\pi_C^{SU} &= 2(z^{SU})^2+(t^{SU})^2. \label{eq:piC_su_main}
+\end{align}
+Under $IS$, all firms face the effective slope term $-1+v$, so
+\begin{align}
+\pi_A^{IS} &= (1-v)\Big[(x^{IS})^2+(y^{IS})^2+(w^{IS})^2\Big], \label{eq:piA_is_main}\\
+\pi_C^{IS} &= (1-v)\Big[2(z^{IS})^2+(t^{IS})^2\Big]. \label{eq:piC_is_main}
+\end{align}
+
+These expressions will be used in the government-regime-choice analysis below.

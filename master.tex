@@ -1,0 +1,328 @@
+\documentclass[sn-mathphys-ay]{sn-jnl}
+
+% -------------------------------------------------
+% Packages
+% -------------------------------------------------
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{doi}
+\Urlmuskip=0mu plus 1mu\relax
+\raggedbottom
+\hbadness=10000
+\vbadness=10000
+
+% -------------------------------------------------
+% Theorem environments
+% -------------------------------------------------
+\theoremstyle{plain}
+\newtheorem{assumption}{Assumption}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{theorem}{Theorem}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+% -------------------------------------------------
+% Macros
+% -------------------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\begin{document}
+
+\title[Participation Capacity and Standards Blocs]{Participation Capacity, Standards Blocs, and Inefficient International Standardization}
+
+\author*{\fnm{Ryota} \sur{Matsuki}}\email{ryota.matsuki@gmail.com}
+
+\affil{\orgname{Independent Researcher},
+  \orgaddress{\city{Matsuyama}, \state{Ehime}, \country{Japan}}}
+
+\abstract{
+This paper develops a three-country model of international standardization with network externalities, coalition formation, and asymmetric participation capacity. Countries choose among a standards war, a two-country standardization union, and full international standardization. Mutual recognition removes the baseline technology-gap cost within the recognition area, but countries may still face residual compliance costs because they differ in their ability to comply with, test, certify, and implement the common standard. The model therefore distinguishes formal accession from effective participation.
+
+The analysis yields three main results. First, full international standardization may maximize world welfare without arising in equilibrium. A low-capacity outsider may contribute too little to the common installed base, relative to the additional competitive pressure its accession creates in incumbent-member markets, for accession to be privately attractive. Second, stronger network effects do not necessarily favor full harmonization uniformly. On a verified parameter region with pronounced participation-capacity asymmetry, stronger network effects can instead stabilize an exclusionary two-country standards bloc. Third, once participation capacity is endogenized, capacity-building investment and conditional transfer policy can, on a verified compact domain for the policy analysis, restore the accession margin more effectively than policies that merely preserve fragmented national standards.
+
+The results suggest that inefficient fragmentation may persist not only because of strategic exclusion, but also because weaker participants cannot translate formal recognition into effective market integration.
+
+\medskip
+\noindent\textit{JEL codes:} F13, L13, L15, O33.
+}
+
+\keywords{international standardization\enspace$\cdot$\enspace network externalities\enspace$\cdot$\enspace compatibility\enspace$\cdot$\enspace standards bloc\enspace$\cdot$\enspace participation capacity\enspace$\cdot$\enspace mutual recognition}
+
+\setlength{\emergencystretch}{2em}
+\maketitle
+
+% =================================================
+% Section 1
+% =================================================
+\input{01_introduction}
+
+% =================================================
+% Section 2
+% =================================================
+\input{02_model}
+
+% =================================================
+% Section 3
+% =================================================
+\input{03_firm_equilibrium}
+
+% =================================================
+% Section 4
+% =================================================
+\input{04_government_regime_choice}
+
+% =================================================
+% Section 5
+% =================================================
+\input{05_capacity_investment_transfer}
+
+% =================================================
+% Section 6
+% =================================================
+\input{06_conclusion}
+
+% =================================================
+% Appendices
+% =================================================
+\appendix
+
+\input{A1_welfare_formulas_and_proof_skeleton}
+\input{A2_monotonicity_and_threshold_existence}
+
+% =================================================
+% Acknowledgements
+% =================================================
+\section*{Acknowledgements}
+During the preparation of this work, the author used ChatGPT (OpenAI) to help
+refine exposition and to obtain suggestions for checking algebraic
+derivations. The author reviewed and edited the manuscript as needed and takes
+full responsibility for its content.
+
+% =================================================
+% Bibliography
+% =================================================
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Barrett and Yang(2001)]{BarrettYang2001}
+Christopher~B. Barrett and Yi{-}Nung Yang.
+\newblock Rational incompatibility with international product standards.
+\newblock \emph{Journal of International Economics}, 54\penalty0 (1):\penalty0
+  171--191, 2001.
+\newblock \doi{10.1016/S0022-1996(00)00082-9}.
+
+\bibitem[Besen and Farrell(1994)]{BesenFarrell1994}
+Stanley~M. Besen and Joseph Farrell.
+\newblock Choosing how to compete: Strategies and tactics in standardization.
+\newblock \emph{Journal of Economic Perspectives}, 8\penalty0 (2):\penalty0
+  117--131, 1994.
+\newblock \doi{10.1257/jep.8.2.117}.
+
+\bibitem[Bj{\o}rkholt(2026)]{Bjorkholt2026}
+Solveig Bj{\o}rkholt.
+\newblock Presenting the {StanDat} database on international standards:
+  Improving data accessibility on marginal topics.
+\newblock \emph{Political Science Research and Methods}, 14\penalty0
+  (1):\penalty0 87--105, 2026.
+\newblock \doi{10.1017/psrm.2025.3}.
+
+\bibitem[Blind and M{\"u}nch(2024)]{BlindMuench2024}
+Knut Blind and Florian M{\"u}nch.
+\newblock The interplay between innovation, standards and regulation in a
+  globalising economy.
+\newblock \emph{Journal of Cleaner Production}, 445:\penalty0 141202, 2024.
+\newblock \doi{10.1016/j.jclepro.2024.141202}.
+
+\bibitem[Blind and von Laer(2022)]{BlindVonLaer2022}
+Knut Blind and Maximilian von Laer.
+\newblock Paving the path: Drivers of standardization participation at {ISO}.
+\newblock \emph{The Journal of Technology Transfer}, 47\penalty0 (4):\penalty0
+  1115--1134, 2022.
+\newblock \doi{10.1007/s10961-021-09871-4}.
+
+\bibitem[Blind et~al.(2017)Blind, Petersen, and
+  Riillo]{BlindPetersenRiillo2017}
+Knut Blind, S{\"o}ren~S. Petersen, and Cesare A.~F. Riillo.
+\newblock The impact of standards and regulation on innovation in uncertain
+  markets.
+\newblock \emph{Research Policy}, 46\penalty0 (1):\penalty0 249--264, 2017.
+\newblock \doi{10.1016/j.respol.2016.11.003}.
+
+\bibitem[Blind et~al.(2023)Blind, Kenney, Leiponen, and
+  Simcoe]{BlindKenneyLeiponenSimcoe2023}
+Knut Blind, Martin Kenney, Aija Leiponen, and Timothy Simcoe.
+\newblock Standards and innovation: A review and introduction to the special
+  issue.
+\newblock \emph{Research Policy}, 52\penalty0 (8):\penalty0 104830, 2023.
+\newblock \doi{10.1016/j.respol.2023.104830}.
+
+\bibitem[Clougherty and Grajek(2014)]{CloughertyGrajek2014}
+Joseph~A. Clougherty and Micha{\l} Grajek.
+\newblock International standards and international trade: Empirical evidence
+  from {ISO} 9000 diffusion.
+\newblock \emph{International Journal of Industrial Organization}, 36:\penalty0
+  70--82, 2014.
+\newblock \doi{10.1016/j.ijindorg.2013.07.005}.
+
+\bibitem[Costinot(2008)]{Costinot2008}
+Arnaud Costinot.
+\newblock A comparative institutional analysis of agreements on product
+  standards.
+\newblock \emph{Journal of International Economics}, 75\penalty0 (1):\penalty0
+  197--213, 2008.
+\newblock \doi{10.1016/j.jinteco.2007.11.004}.
+
+\bibitem[David and Greenstein(1990)]{DavidGreenstein1990}
+Paul~A. David and Shane Greenstein.
+\newblock The economics of compatibility standards: An introduction to recent
+  research.
+\newblock \emph{Economics of Innovation and New Technology}, 1\penalty0
+  (1--2):\penalty0 3--41, 1990.
+\newblock \doi{10.1080/10438599000000002}.
+
+\bibitem[Farrell and Saloner(1985)]{FarrellSaloner1985}
+Joseph Farrell and Garth Saloner.
+\newblock Standardization, compatibility, and innovation.
+\newblock \emph{The RAND Journal of Economics}, 16\penalty0 (1):\penalty0
+  70--83, 1985.
+\newblock \doi{10.2307/2555589}.
+
+\bibitem[Farrell and Saloner(1986)]{FarrellSaloner1986}
+Joseph Farrell and Garth Saloner.
+\newblock Installed base and compatibility: Innovation, product
+  preannouncements, and predation.
+\newblock \emph{The American Economic Review}, 76\penalty0 (5):\penalty0
+  940--955, 1986.
+\newblock \doi{10.2307/1816461}.
+
+\bibitem[Foucart and Li(2021)]{FoucartLi2021}
+Renaud Foucart and Qian~Cher Li.
+\newblock The role of technology standards in product innovation: Theory and
+  evidence from {UK} manufacturing firms.
+\newblock \emph{Research Policy}, 50\penalty0 (2):\penalty0 104157, 2021.
+\newblock \doi{10.1016/j.respol.2020.104157}.
+
+\bibitem[Gandal and Shy(2001)]{GandalShy2001}
+Neil Gandal and Oz~Shy.
+\newblock Standardization policy and international trade.
+\newblock \emph{Journal of International Economics}, 53\penalty0 (2):\penalty0
+  363--383, 2001.
+\newblock \doi{10.1016/S0022-1996(00)00067-2}.
+
+\bibitem[ISO and UNIDO(2010)]{ISO_UNIDO}
+{ISO} and {UNIDO}.
+\newblock International Standards and ``Private Standards'': Implications for
+  Developing Countries.
+\newblock ISO, Geneva, and UNIDO, Vienna, 2010.
+
+\bibitem[Krishna(1998)]{Krishna1998}
+Pravin Krishna.
+\newblock Regionalism and multilateralism: A political economy approach.
+\newblock \emph{The Quarterly Journal of Economics}, 113\penalty0
+  (1):\penalty0 227--251, 1998.
+\newblock \doi{10.1162/003355398555559}.
+
+\bibitem[Katz and Shapiro(1985)]{KatzShapiro1985}
+Michael~L. Katz and Carl Shapiro.
+\newblock Network externalities, competition, and compatibility.
+\newblock \emph{The American Economic Review}, 75\penalty0 (3):\penalty0
+  424--440, 1985.
+\newblock \doi{10.2307/1814809}.
+
+\bibitem[Katz and Shapiro(1986)]{KatzShapiro1986}
+Michael~L. Katz and Carl Shapiro.
+\newblock Technology adoption in the presence of network externalities.
+\newblock \emph{Journal of Political Economy}, 94\penalty0 (4):\penalty0
+  822--841, 1986.
+\newblock \doi{10.1086/261409}.
+
+\bibitem[Katz and Shapiro(1992)]{KatzShapiro1992}
+Michael~L. Katz and Carl Shapiro.
+\newblock Product introduction with network externalities.
+\newblock \emph{The Journal of Industrial Economics}, 40\penalty0 (1):\penalty0
+  55--83, 1992.
+\newblock \doi{10.2307/2950627}.
+
+\bibitem[Katz and Shapiro(1994)]{KatzShapiro1994}
+Michael~L. Katz and Carl Shapiro.
+\newblock Systems competition and network effects.
+\newblock \emph{Journal of Economic Perspectives}, 8\penalty0 (2):\penalty0
+  93--115, 1994.
+\newblock \doi{10.1257/jep.8.2.93}.
+
+\bibitem[Klimenko(2009)]{Klimenko2009}
+Mikhail~M. Klimenko.
+\newblock Strategic interoperability standards and trade taxes.
+\newblock \emph{International Review of Economics \& Finance}, 18\penalty0
+  (4):\penalty0 539--551, 2009.
+\newblock \doi{10.1016/j.iref.2008.09.015}.
+
+\bibitem[Matutes and Regibeau(1996)]{MatutesRegibeau1996}
+Carmen Matutes and Pierre Regibeau.
+\newblock A selective review of the economics of standardization: Entry
+  deterrence, technological progress and international competition.
+\newblock \emph{European Journal of Political Economy}, 12\penalty0
+  (2):\penalty0 183--209, 1996.
+\newblock \doi{10.1016/0176-2680(95)00013-5}.
+
+\bibitem[Riezman(1985)]{Riezman1985}
+Raymond Riezman.
+\newblock Customs unions and the core.
+\newblock \emph{Journal of International Economics}, 19\penalty0
+  (3--4):\penalty0 355--365, 1985.
+\newblock \doi{10.1016/0022-1996(85)90029-3}.
+
+\bibitem[Schmidt and Steingress(2022)]{SchmidtSteingress2022}
+Julia Schmidt and Walter Steingress.
+\newblock No double standards: Quantifying the impact of standard harmonization
+  on trade.
+\newblock \emph{Journal of International Economics}, 137:\penalty0 103619,
+  2022.
+\newblock \doi{10.1016/j.jinteco.2022.103619}.
+
+\bibitem[Shy(2001)]{Shy2001}
+Oz Shy.
+\newblock \emph{The Economics of Network Industries}.
+\newblock Cambridge University Press, Cambridge, 2001.
+
+\bibitem[Tassey(2017)]{Tassey2017}
+Gregory Tassey.
+\newblock The roles and impacts of technical standards on economic growth and
+  implications for innovation policy.
+\newblock \emph{Annals of Science and Technology Policy}, 1\penalty0
+  (3):\penalty0 215--316, 2017.
+\newblock \doi{10.1561/110.00000003}.
+
+\bibitem[Wang and Zhu(2025)]{WangZhu2025}
+Suyun Wang and Hai Zhu.
+\newblock The adoption of international standards and export behavior of
+  multi-product firms: A perspective based on differentiated competitive
+  strategies.
+\newblock \emph{Economic Analysis and Policy}, 86:\penalty0 351--362, 2025.
+\newblock \doi{10.1016/j.eap.2025.03.034}.
+
+\bibitem[World Trade Organization(2024)]{WTO_TBT}
+World Trade Organization.
+\newblock Technical barriers to trade.
+\newblock Institutional background on the {TBT} Agreement and mutual
+  recognition arrangements, 2024.
+
+\end{thebibliography}
+
+\end{document}
